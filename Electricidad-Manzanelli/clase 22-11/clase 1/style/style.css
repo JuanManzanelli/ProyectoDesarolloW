@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+#header {
+    background-color: rgb(238, 219, 109);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: sticky;
+    top: 0px;
+    }
+
+#header .headerLogo img {
+        width: 180px;
+        height: auto;
+    }
+
+#header .headerMenu ul {
+    display: flex;
+    list-style: none;
+}    
+
+#header .headerMenu ul li a{
+    padding: 5px;
+    margin: 0 20px ;
+    color: white;
+    }
+#header .headerMenu ul li a:hover {
+    background-color: white;
+    color: rgb(238, 219, 109);
+}
+
+#novedadesCompras {
+    background-image: url(../img/novedades.jpeg);
+    height: 600px;
+    width: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 80px 0 0 ;
+    margin: 1px;
+}
+
+#novedadesCompras .novedadesTitulo {
+    color: rgb(238, 219, 109);
+    background-color: white;  
+}
+
+.clientes {
+    background-image: url(../img/nuestrosclientes.jpeg);
+    height: 450px;
+    width: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgb(238, 219, 109);
+    margin: 25px;
+}
+
+
+
+#footer {
+    color: white;
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+
+#footer .footerTitulo {
+    margin: 15px 700px;
+}
+#footer .footerDescripcion {
+    margin: 20px 20px;
+}
+
+#footer .footerContacto {
+    margin: 15px 700px;
+}
+
+#footer .footerNumero {
+    margin: 5px 680px;
+}
+
+
+#imagenes {
+    display: grid;
+    gap: 20px;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas:
+     "int"
+     "pro"
+     "sen"
+     "dis"
+     "ind";
+ }
+
+ .interruptor {
+     grid-area: int;
+ }
+ 
+ .prolongador {
+     grid-area: pro;
+ }
+ 
+ .sensor {
+     grid-area: sen;
+ }
+
+ .distanciador {
+     grid-area: dis;
+ }
+
+ .industria {
+     grid-area: ind;
+ }
+
+ @media screen and (min-width: 768px) {
+     #imagenes {
+        grid-template-areas:
+        "int int int int int"
+        "pro pro sen sen sen"
+        "pro pro sen sen sen"
+        "dis dis dis dis dis"
+        "ind ind ind ind ind";
+     }
+ }
+
+
+
+
+
+.tituloCliente {
+    margin: 25px 0;
+}
+
+.tituloCliTabla {
+    margin: 45px 0px;
+}
+
+.tablaCliente {
+    background-color: rgb(238, 219, 109);
+    color: black;
+}
+
+
+
+#comprasTodo h2 {
+    margin: 45px 20px;
+    color: rgb(238, 219, 109);
+}
+#comprasTodo h3 {
+    margin: 25px 20px;
+    color: rgb(238, 219, 109);
+}
+#comprasTodo .imagenesCompras {
+    margin: 45px 25px;
+}
+#comprasTodo h4 {
+    margin: 45px 10px;
+    color: rgb(238, 219, 109);
+}
+
+#prove .completo {
+    background-color: rgb(238, 219, 109);
+    width: 1535px;
+    height: 535px;
+}
+#prove .completo h2 {
+    background-color: rgb(238, 219, 109);
+    color: white;
+    margin: 0 20px;
+}
+
+#prove .completo h3 {
+    color: white;
+    margin: 40px 660px;
+}
+#prove .completo .mapa {
+    margin: 40px 350px;
+}
+
+
+#publicacionEpec {
+        background-color: white;
+        color: rgb(238, 219, 109);
+        margin: auto;
+      }
+
+
+#publicacionEpec .publicacionImagen { 
+    margin: 10px;
+    display: grid;
+}
+
+.publicacionImagen {
+    grid-area: publi;
+}
+
+
